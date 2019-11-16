@@ -4,7 +4,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
     <title>checkpoint-2</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <!-- onload is for interval adding-->
+      <div class="container-fluid" onload="">
+        <div class="row">
+          <div class="col">
+            <h1>Dirt Farmer</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTfx7NrPISGvWs765zGIBRfgecioujckgp4zhrolWiL-8uhRiH3" style="cursor:pointer" onclick="mine()"/>
+          </div>
+          <div class="col-12 col-md-6">
+            <!-- Dirt Counter -->
+              <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                  <div class="card-header"></div>
+                  <div class="card-body">
+                    <h5 class="card-title" id="dirt-total"></h5>
+                    <p class="card-text"></p>
+                  </div>
+                </div>
+                <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
+                  <div class="card-header">Header</div>
+                  <div class="card-body">
+                    <h5 class="card-title"id= "click-add"></h5>
+                    <p class="card-text" id= "multiplier-total ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-6">
+              <button type="button"  class="btn btn-primary btn-lg btn-block " onclick="purchaseShovel()" id=shovel>Block level button</button>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="myFunction()">Block level button</button>
+          </div>
+          <div class="col-12 col-md-6">
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="myFunction()">Block level button</button>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="myFunction()"> Block level button</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>
