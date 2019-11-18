@@ -18,7 +18,8 @@
     </header>
     <main>
       <!-- onload is for interval adding-->
-      <div class="container-fluid" onload="">
+      
+      <div class="container-fluid" onload="setInterval()">
         <div class="row">
           <div class="col">
             <h1>Dirt Farmer</h1>
@@ -31,29 +32,49 @@
           <div class="col-12 col-md-6">
             <!-- Dirt Counter -->
               <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                  <div class="card-header">Dirt Total</div>
+                  <h1 class="card-header">Dirt Total</h1>
                   <div class="card-body">
                     <h5 class="card-title" id="dirt-total"></h5>
                     <p class="card-text"></p>
                   </div>
                 </div>
                 <div class="card text-white bg-secondary mb-3" style="max-width: 18rem;">
-                  <div class="card-header" >Header</div>
+                  
                   <div class="card-body">
+                    <h5><b>Bonus Clicks</b></h5>
                     <h5 class="card-title"id= "click-add"> </h5>
-                    <p class="card-text" id= "multiplier-total"></p>
+                    <h5><b>Mutilplier</b></h5>
+                    <h5 class="card-text" id= "multiplier-total"></h5>
+                    <h5><b>Passive Dirt</b></h5>
+                    <h5 id="passive-add"></h5>
+                    
                   </div>
                 </div>
           </div>
         </div>
         <div class="row">
           <div class="col-12 col-md-6">
-              <button type="button"  class="btn btn-primary btn-lg btn-block " onclick="purchaseShovel()"  id=shovel>Shovel</button>
-              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="purchaseDrill()"  id="drill">Drill</button>
+              <button type="button"  class="btn btn-primary btn-lg btn-block " onclick="purchaseShovel()" >Shovel</button>
+              <h4>Cost:</h4>
+              <h4 id="shovel-cost"></h4>
+              <p>Adds 1 to your Bonus Clicks. You Currently have:</p> <p id="shovel"></p>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="purchaseDrill()">Excavator</button>
+              <h4>Cost:</h4>
+              <h4 id="drill-cost"></h4>
+              <p>Adds 1 to your Multiplier. You Currently have:</p>
+              <p id="drill"></p>
           </div>
           <div class="col-12 col-md-6 mt-2">
-              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="purchaseDigger()"  id="digger">Digger</button>
-              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="purchaseDriller()"  id="driller"> Driller</button>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="purchaseDigger()">Digger</button>
+              <h4>Cost:</h4>
+              <h4 id="digger-cost"></h4>
+              <p>Adds 1 to your Passive Dirt. You Currently have:</p>
+              <p id="digger"></p>
+              <button type="button" class="btn btn-primary btn-lg btn-block" onclick="purchaseDriller()"> Driller</button>
+              <h4>Cost:</h4>
+              <h4 id="driller-cost"></h4>
+              <p>Adds 2 to your Passive Dirt. You Currently have:</p>
+              <p id="driller"></p>
           </div>
         </div>
       </div>
