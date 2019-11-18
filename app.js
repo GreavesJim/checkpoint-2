@@ -47,8 +47,8 @@ let diggerCost = document.querySelector("#digger-cost");
 
 function mine() {
   dirt.count++;
-  dirt.count += countAdd;
-  dirt.count *= multiplier.count;
+  dirt.count += countAdd * multiplier.count;
+
   drawMine();
 }
 
